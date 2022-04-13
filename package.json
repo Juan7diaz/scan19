@@ -1,5 +1,6 @@
 {
   "name": "scan19",
+  "homepage": "https://juan7diaz.github.io/scan19/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@emotion/react": "11",
     "@emotion/styled": "11",
     "framer-motion": "4",
+    "gh-pages": "^3.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "4.3.1",
@@ -14,6 +16,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
