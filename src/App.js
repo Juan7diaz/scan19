@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import  {useState} from 'react'
+import GlobalDataCards from './components/cardsGlobal/GlobalDataCards'
+import CardsCountry from './components/cardsCountry/CardsCountry'
+import Navbar from './components/header/Navbar'
+import { Box } from '@chakra-ui/react';
+import SearchBar from './components/searchBar/SearchBar';
+import ButtonGeneric from './components/ButtonGeneric/ButtonGeneric';
 
 function App() {
+
+  const [country, setCountry] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box bg={ 2} minH={'100vh'}>
+          <Navbar title={ "SCAN19" }/>
+          <SearchBar setCountry={setCountry}/>
+          {
+            country ?
+              (
+              <>
+                <ButtonGeneric text={'Back Home'} setCountry={setCountry}/>
+                <CardsCountry country={country} />
+                <div style={{paddingTop: 60}}></div>
+              </>
+              )
+              :(
+                <GlobalDataCards />
+              )
+          }
+      </Box>
+    </>
   );
 }
 

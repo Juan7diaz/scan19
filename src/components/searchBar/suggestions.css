@@ -1,0 +1,33 @@
+.suggestionsDark {
+  cursor: pointer;
+  padding: 7px;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #3b3e47;
+  border-left: 1px solid #3b3e47;
+  border-right: 1px solid #3b3e47;
+  background-color: #2a2e3d;
+}
+
+.suggestionsDark:hover {
+  background-color: #171923;
+  border-radius: 3px;
+  color: #feca57;
+}
+
+.suggestionsLight {
+  cursor: pointer;
+  padding: 7px;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #dbe0e5;
+  border-left: 1px solid #dbe0e5;
+  border-right: 1px solid #dbe0e5;
+  background-color: #ffffff;
+}
+
+.suggestionsLight:hover {
+  background-color: #dde4ee;
+  border-radius: 3px;
+  color: #000000;
+}
