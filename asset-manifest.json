@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/scan19/static/css/main.a464d7b1.css",
+    "main.js": "/scan19/static/js/main.a94140e4.js",
+    "index.html": "/scan19/index.html",
+    "main.a464d7b1.css.map": "/scan19/static/css/main.a464d7b1.css.map",
+    "main.a94140e4.js.map": "/scan19/static/js/main.a94140e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a464d7b1.css",
+    "static/js/main.a94140e4.js"
+  ]
+}
